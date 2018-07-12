@@ -113,14 +113,14 @@ formatter.match({
   "location": "LoginStepDefinitions.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 11185293386,
+  "duration": 9224972486,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.title_of_login_page_is_Free_CRM_software_in_the_cloud_powers_sales_and_customer_service()"
 });
 formatter.result({
-  "duration": 28209386,
+  "duration": 22260623,
   "status": "passed"
 });
 formatter.match({
@@ -137,21 +137,21 @@ formatter.match({
   "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 538669756,
+  "duration": 925976139,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 4348611668,
+  "duration": 5552353635,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 6174565,
+  "duration": 11477179,
   "status": "passed"
 });
 formatter.scenario({
@@ -195,14 +195,14 @@ formatter.match({
   "location": "LoginStepDefinitions.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 11909981054,
+  "duration": 9282777327,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.title_of_login_page_is_Free_CRM_software_in_the_cloud_powers_sales_and_customer_service()"
 });
 formatter.result({
-  "duration": 22299345,
+  "duration": 20618893,
   "status": "passed"
 });
 formatter.match({
@@ -219,21 +219,21 @@ formatter.match({
   "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 1260815752,
+  "duration": 958385254,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 2328639855,
+  "duration": 2313238668,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 9159910,
+  "duration": 34217398,
   "status": "passed"
 });
 });
