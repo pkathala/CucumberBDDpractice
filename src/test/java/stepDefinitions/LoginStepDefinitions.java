@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -54,6 +55,38 @@ public class LoginStepDefinitions {
 	    Assert.assertEquals("CRMPRO", title);
 	}
 
+	@Then("^user moves to Contacts tab$")
+	public void user_moves_to_Contacts_tab(){
+	    driver.switchTo().frame("mainpanel");
+	    WebElement contacts=driver.findElement(By.xpath("//a[text()='Contacts']"));
+	    Actions act=new Actions(driver);
+	    act.moveToElement(contacts).build().perform();
+	    
+	}
+
+	@Then("^user clicks new contact$")
+	public void user_clicks_new_contact() {
+		driver.findElement(By.linkText("New Contact")).click();
+	}
+
+	@Then("^user inputs \"([^\"]*)\",\"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_inputs_and(String firstname, String lastname, String position) {
+		driver.findElement(By.id("first_name")).sendKeys(firstname);
+	    driver.findElement(By.id("surname")).sendKeys(lastname);
+	    driver.findElement(By.id("company_position")).sendKeys(position);
+	  
+	    
+	}
+
+	@Then("^user clicks save button$")
+	public void user_clicks_save_button() {
+	    driver.findElement(By.xpath("//input[@value='Save']")).click();
+	}
+
+	@Then("^user closes browser$")
+	public void user_closes_browser(){
+	   driver.quit();
+	}
 
 
 }
