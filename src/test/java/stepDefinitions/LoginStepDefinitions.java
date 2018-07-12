@@ -30,10 +30,10 @@ public class LoginStepDefinitions {
 	    Assert.assertEquals("Free CRM software in the cloud powers sales and customer service", title);
 	}
 
-	@Then("^user enters username and password$")
-	public void user_enters_username_and_password() {
-	    driver.findElement(By.name("username")).sendKeys("tiny06");
-	    driver.findElement(By.name("password")).sendKeys("tiny06");
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_username_and_password(String username, String password) {
+	    driver.findElement(By.name("username")).sendKeys(username);
+	    driver.findElement(By.name("password")).sendKeys(password);
 	    
 	    
 	}

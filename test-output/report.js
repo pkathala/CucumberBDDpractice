@@ -26,7 +26,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters username and password",
+  "name": "user enters \"tiny06\" and \"tiny06\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -43,35 +43,45 @@ formatter.match({
   "location": "LoginStepDefinitions.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 7108202070,
+  "duration": 11092966968,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.title_of_login_page_is_Free_CRM_software_in_the_cloud_powers_sales_and_customer_service()"
 });
 formatter.result({
-  "duration": 14734979,
+  "duration": 58800422,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_enters_username_and_password()"
+  "arguments": [
+    {
+      "val": "tiny06",
+      "offset": 13
+    },
+    {
+      "val": "tiny06",
+      "offset": 26
+    }
+  ],
+  "location": "LoginStepDefinitions.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 485860084,
+  "duration": 504597916,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 4018097283,
+  "duration": 8840764816,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefinitions.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 10427946,
+  "duration": 11536428,
   "status": "passed"
 });
 });
