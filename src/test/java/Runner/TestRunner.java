@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:\\SeleniumWorkspace\\BDDframework\\src\\test\\java\\Features\\contact.feature",
+@CucumberOptions(features="C:\\SeleniumWorkspace\\BDDframework\\src\\test\\java\\Features\\deal.feature",
 glue={"stepDefinitions"},
 format={"pretty","html:test-output","json:test-output/cucumber.json"},
 dryRun=false,
